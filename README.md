@@ -17,6 +17,7 @@ A Python command-line tool that fetches and displays a GitHub user's recent acti
 - `pip` package manager
 - Internet connection (to access GitHub API)
 
+Project URL: https://roadmap.sh/projects/github-user-activity
 
 ## Installation
 
