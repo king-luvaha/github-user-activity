@@ -1,4 +1,4 @@
-```markdown
+
 # GitHub User Activity CLI
 
 A Python command-line tool that fetches and displays a GitHub user's recent activity using the GitHub API.
@@ -16,6 +16,7 @@ A Python command-line tool that fetches and displays a GitHub user's recent acti
 - Python 3.6 or higher
 - `pip` package manager
 - Internet connection (to access GitHub API)
+
 
 ## Installation
 
@@ -101,4 +102,3 @@ python -m unittest discover tests
 
 ## License
 MIT License - See [LICENSE](LICENSE) file for details
-```
