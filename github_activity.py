@@ -3,10 +3,9 @@ import requests
 import json
 from datetime import datetime
 
+### Fetches the user's activity from GitHub API
+
 def fetch_user_activity(username):
-    """
-    Fetches the user's activity from GitHub API
-    """
     url = f"https://api.github.com/users/{username}/events"
     try:
         response = requests.get(url)
@@ -21,10 +20,10 @@ def fetch_user_activity(username):
         print(f"Error fetching data: {err}")
     return None
 
+
+### Parses the raw activity data into readable messages
+
 def parse_activity(events):
-    """
-    Parses the raw activity data into readable messages
-    """
     if not events:
         return []
     
@@ -82,10 +81,10 @@ def parse_activity(events):
     
     return activity_messages
 
+
+### Displays the user's activity in the terminal
+
 def display_activity(username, activities):
-    """
-    Displays the user's activity in the terminal
-    """
     if not activities:
         print(f"No recent activity found for {username} or the account is private.")
         return
@@ -95,10 +94,10 @@ def display_activity(username, activities):
         print(activity)
     print("\n")
 
+
+### Main function to handle command line arguments and execute the program
+
 def main():
-    """
-    Main function to handle command line arguments and execute the program
-    """
     if len(sys.argv) != 2:
         print("Usage: python github_activity.py <username>")
         sys.exit(1)
